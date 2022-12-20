@@ -1,36 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-import React, { useEffect, useState } from 'react';
-//import axios from 'axios';
-import { axiosApi } from "./service/ApiService";
+// import './App.css';
+// import React from 'react';
+// import { Link, Route, Routes } from 'react-router-dom';
 
-function App() {
-  const [hello, setHello] = useState('');
+// import Main from './pages/Main';
 
-  useEffect(() => {
-    axiosApi.get('/hello')
-      .then(response => setHello(response.data))
-      .catch(error => console.log(error))
-  }, []);
+// function App() {
+//   return (
+//     <div className="App">
 
+//       {/* Main */}
+//       <Routes>
+//         <Route exact path="/" element={<Main />} />
+//       </Routes>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// routes
+import Router from './routes';
+// theme
+import ThemeProvider from './theme';
+// components
+import ScrollToTop from './components/scroll-to-top';
+import { StyledChart } from './components/chart';
+
+// ----------------------------------------------------------------------
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          백엔드 데이터 : {hello}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <ScrollToTop />
+      <StyledChart />
+      <Router />
+    </ThemeProvider>
   );
 }
-
-export default App;
