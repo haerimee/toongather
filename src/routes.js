@@ -9,39 +9,41 @@ import LoginPage from './pages/LoginPage';
 import Page404 from './pages/Page404';
 import ProductsPage from './pages/ProductsPage';
 import DashboardAppPage from './pages/DashboardAppPage';
+import WebtoonsPage from './pages/WebtoonsPage';
 
 // ----------------------------------------------------------------------
 
 export default function Router() {
-  const routes = useRoutes([
-    {
-      path: '/dashboard',
-      element: <DashboardLayout />,
-      children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
-        { path: 'app', element: <DashboardAppPage /> },
-        { path: 'user', element: <UserPage /> },
-        { path: 'products', element: <ProductsPage /> },
-        { path: 'blog', element: <BlogPage /> },
-      ],
-    },
-    {
-      path: 'login',
-      element: <LoginPage />,
-    },
-    {
-      element: <SimpleLayout />,
-      children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
-        { path: '404', element: <Page404 /> },
-        { path: '*', element: <Navigate to="/404" /> },
-      ],
-    },
-    {
-      path: '*',
-      element: <Navigate to="/404" replace />,
-    },
-  ]);
+    const routes = useRoutes([
+        {
+            path: '/dashboard',
+            element: <DashboardLayout />,
+            children: [
+                { element: <Navigate to="/dashboard/app" />, index: true },
+                { path: 'app', element: <DashboardAppPage /> },
+                { path: 'user', element: <UserPage /> },
+                { path: 'products', element: <ProductsPage /> },
+                { path: 'blog', element: <BlogPage /> },
+                { path: 'webtoons', element: <WebtoonsPage /> },
+            ],
+        },
+        {
+            path: 'login',
+            element: <LoginPage />,
+        },
+        {
+            element: <SimpleLayout />,
+            children: [
+                { element: <Navigate to="/dashboard/app" />, index: true },
+                { path: '404', element: <Page404 /> },
+                { path: '*', element: <Navigate to="/404" /> },
+            ],
+        },
+        {
+            path: '*',
+            element: <Navigate to="/404" replace />,
+        },
+    ]);
 
-  return routes;
+    return routes;
 }
