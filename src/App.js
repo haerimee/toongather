@@ -30,11 +30,11 @@ import './index.css';
 // ----------------------------------------------------------------------
 
 export default function App() {
-  return (
-    <ThemeProvider>
-      <ScrollToTop />
-      <StyledChart />
-      <Router />
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider>
+            <ScrollToTop />
+            <StyledChart />
+            <Router />
+        </ThemeProvider>
+    );
 }
