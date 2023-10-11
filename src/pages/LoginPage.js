@@ -76,14 +76,14 @@ export default function LoginPage() {
 
         <Container maxWidth="sm">
           <StyledContent>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h4" gutterBottom sx={{ mb: 5 }}>
               ToonGather
             </Typography>
 
-            <Typography variant="body2" sx={{ mb: 5 }}>
+            {/* <Typography variant="body2" sx={{ mb: 5 }}>
               Don’t have an account? {""}
               <Link variant="subtitle2">Get started</Link>
-            </Typography>
+            </Typography> */}
 
             <Stack direction="row" spacing={2}>
               <Button fullWidth size="large" color="inherit" variant="outlined">
