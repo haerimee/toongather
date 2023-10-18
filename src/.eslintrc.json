@@ -19,6 +19,12 @@
         ],
         "react/react-in-jsx-scope": "off",
         "no-use-before-define": "warn",
-        "react/require-default-props": "warn"
+        "react/require-default-props": "warn",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": ["**/*.faker.*"]
+            }
+        ]
     }
 }
