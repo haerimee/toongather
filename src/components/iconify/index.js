@@ -1,1 +1,3 @@
-export { default } from './Iconify';
+import Iconify from './Iconify';
+
+export default Iconify;

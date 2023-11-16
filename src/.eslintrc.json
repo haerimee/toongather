@@ -17,13 +17,23 @@
                 "extensions": [".js", ".jsx"]
             }
         ],
+        "react/prop-types": "off",
+        "react/forbid-prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "no-use-before-define": "warn",
         "react/require-default-props": "warn",
         "import/no-extraneous-dependencies": [
             "error",
             {
-                "devDependencies": ["**/*.faker.*"]
+                "devDependencies": true
+            }
+        ],
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": ["Link"],
+                "specialLink": ["hrefLeft", "hrefRight"],
+                "aspects": ["invalidHref", "preferButton"]
             }
         ]
     }

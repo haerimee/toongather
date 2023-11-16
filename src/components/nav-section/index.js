@@ -1,1 +1,3 @@
-export { default } from './NavSection';
+import NavSection from './NavSection';
+
+export default NavSection;
