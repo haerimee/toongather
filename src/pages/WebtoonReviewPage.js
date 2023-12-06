@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 // @mui
-import { Grid, Button, Container, Stack, Typography } from '@mui/material';
+import { Grid, Button, Container, Stack } from '@mui/material';
 // components
 import Iconify from '../components/iconify';
 import {
@@ -35,15 +35,16 @@ export default function BlogPage() {
                     justifyContent="space-between"
                     mb={5}
                 >
-                    <Typography variant="h4" gutterBottom>
+                    {/* <Typography variant="h4" gutterBottom>
                         Blog
-                    </Typography>
+                    </Typography> */}
                     <Button
                         variant="contained"
                         startIcon={<Iconify icon="eva:plus-fill" />}
                     >
                         New Post
                     </Button>
+                    {/* 첫회보기, 기록, 수정, 등록 */}
                 </Stack>
 
                 <Stack

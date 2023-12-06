@@ -8,7 +8,6 @@ import { styled } from 'styled-components';
 import HomeCardItem from './HomeCardItem';
 
 // ----------------------------------------------------------------------
-// eslint-disable-next-line react/prop-types
 export default function HomeCardList({ title, subheader, reviews }) {
     const CaroButton = styled.button`
         all: unset;
