@@ -31,6 +31,17 @@ AppWidgetSummary.propTypes = {
     sx: PropTypes.object,
 };
 
+// export default function AppWidgetSummary({ title, total, icon, color = 'primary', sx, ...other }) {
+//   return (
+//     <div>
+//       <div>
+//         <img src="/assets/illustrations/illustration_login.png"></img>
+//       </div>
+//       <div>
+//         <img src="/assets/illustrations/illustration_avatar.png"></img>
+//       </div>
+//     </div>
+//   );
 export default function AppWidgetSummary({
     title,
     total,
