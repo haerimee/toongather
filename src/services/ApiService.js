@@ -1,9 +1,9 @@
-import axios from "axios";
-import { API_BASE_URL } from "../api-config";
+import axios from 'axios';
+import { API_BASE_URL } from '../api-config';
 
 // TODO: METHOD 나 OPTION도 추가?
 const axiosApi = axios.create({
-    baseURL: API_BASE_URL
-})
+    baseURL: API_BASE_URL,
+});
 
-export { axiosApi }
+export default axiosApi;

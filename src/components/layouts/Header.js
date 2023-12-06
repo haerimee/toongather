@@ -3,10 +3,10 @@ import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+// import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
@@ -71,7 +71,10 @@ export default function Header() {
                         variant="h6"
                         noWrap
                         component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                        sx={{
+                            flexGrow: 1,
+                            display: { xs: 'none', sm: 'block' },
+                        }}
                     >
                         Toongather
                     </Typography>
@@ -87,9 +90,7 @@ export default function Header() {
                 </Toolbar>
             </AppBar>
             <Divider />
-            <List component="nav">
-                {/* {mainListItems} */}
-            </List>
+            <List component="nav">{/* {mainListItems} */}</List>
         </Box>
     );
 }

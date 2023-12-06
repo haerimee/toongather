@@ -4,11 +4,6 @@
 import { Box, Card, Link, Typography, Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Rating from '@mui/material/Rating';
-// import Favorite from '@mui/icons-material/Favorite';
-// import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
-//
-// utils
-// components
 
 // ----------------------------------------------------------------------
 
