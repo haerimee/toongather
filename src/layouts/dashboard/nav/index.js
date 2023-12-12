@@ -65,6 +65,7 @@ export default function Nav({ openNav, onCloseNav }) {
         >
             <Box sx={{ px: 2.5, py: 3, display: 'inline-flex', mt: 1 }}>
                 {/* <Logo /> */}
+                {/* TODO: 메인 PATH 추가 */}
                 <a href="/dashboard/app" style={titleStyle.title}>
                     Toongather
                 </a>

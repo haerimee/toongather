@@ -16,7 +16,8 @@ const navConfig = [
     {
         // TODO: 웹툰 페이지 경로추가
         title: '웹툰',
-        path: '/dashboard/webtoons',
+        // path: '/dashboard/webtoons',
+        path: '/login',
         icon: icon('ic_webtoon'),
     },
     {
