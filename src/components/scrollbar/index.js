@@ -1,1 +1,3 @@
-export { default } from './Scrollbar';
+import Scrollbar from './Scrollbar';
+
+export default Scrollbar;
